@@ -1,0 +1,20 @@
+/* Start with the smallest background size first */
+
+header {
+    height: 400px;
+    background-color: #eff2f7;
+    background-image: url(../img/small-bg.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background shorthand: image, position, size (x&y), repeat */
+    background: url(../img/small-bg.webp) center bottom / cover no-repeat;
+}
+
+/* as the screen gets wider, the quality of the first image isnt as good. Swap it out for a better quality image */
+@media screen and (min-width: 900px) {
+    header {
+        background: url(../img/med-bg.webp) center bottom / cover no-repeat;
+    }
+}
